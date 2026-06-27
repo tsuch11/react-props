@@ -1,4 +1,5 @@
 import "./App.css";
+import Button from './components/Button'
 
 function Header() {
   return (
@@ -51,7 +52,7 @@ function MainContent() {
           to collaborate with you to tackle your most complex challenges and
           drive your success.
         </p>
-        <Button />
+        <Button buttonText="Learn More" buttonStyle="learn-button" />
       </div>
     </main>
   );
@@ -70,7 +71,7 @@ function ProductSection() {
             />
             <h3>Premium Bluetooth Headphones</h3>
             <p className="product-price">2,400 Baht</p>
-            <Button />
+            <Button buttonText="Add to Cart" buttonStyle="add-to-cart-button" />
           </div>
           <div className="product-card">
             <img
@@ -79,7 +80,7 @@ function ProductSection() {
             />
             <h3>Classic Leather Watch</h3>
             <p className="product-price">4,000 Baht</p>
-            <Button />
+            <Button buttonText="Add to Cart" buttonStyle="add-to-cart-button" />
           </div>
           <div className="product-card">
             <img
@@ -88,7 +89,7 @@ function ProductSection() {
             />
             <h3>Organic Green Tea</h3>
             <p className="product-price">79.99 Baht</p>
-            <Button />
+            <Button buttonText="Add to Cart" buttonStyle="add-to-cart-button-secondary" />
           </div>
         </div>
       </div>
@@ -102,10 +103,6 @@ function Footer() {
       <p>&copy; 2023 Your Ecommerce Store. All rights reserved.</p>
     </footer>
   );
-}
-
-function Button() {
-  return <button className="add-to-cart-button">Add to Cart</button>;
 }
 
 function App() {
